@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>key Event</title>
+</head>
+<body>
+
+<h3>Count Characters</h3>
+
+<input type="text" id="inputText" onkeyup="countChacters()">
+
+<p>Total Characters: <span id="count">0</span></p>
+
+<script>
+function countChacters(){
+    var text = document.getElementById("inputText").value;
+	document.getElementById("count").innerHTML = text.length;
+	
+	}	
+	</script>
+    
+    </body>
+    </html>	

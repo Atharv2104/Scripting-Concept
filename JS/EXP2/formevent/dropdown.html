@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown Change Event</title>
+</head>
+<body>
+
+<h2>Select Your Course</h2>
+
+<select id="course">
+    <option value="">--Select Course--</option>
+    <option value="java">Java</option>
+    <option value="python">Python</option>
+    <option value="ml">Machine Learning</option>
+    <option value="ai">Artificial Intelligence</option>
+</select>
+
+<script>
+    // Get dropdown element
+    const dropdown = document.getElementById("course");
+
+    // Add change event
+    dropdown.addEventListener("change", function () {
+        alert("You selected: " + dropdown.value);
+    });
+</script>
+
+</body>
+</html>

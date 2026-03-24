@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Number and Image Validation</h3>
+
+<form onsubmit="return validate()">
+    <input type="file" id="img">
+    <br><br>
+
+    <p id="msg"></p>
+
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+function validate() {
+    let img = document.getElementById("img").value;
+
+    
+
+    if (img == "") {
+        document.getElementById("msg").innerHTML =
+            "Please select an image";
+        return false;
+    }
+
+    document.getElementById("msg").innerHTML =
+        "image file is valid";
+    return false;
+}
+</script>
+
+</body>
+</html>

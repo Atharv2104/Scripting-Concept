@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exit Warning</title>
+</head>
+<body>
+
+<h2>Do not close this page!</h2>
+<p>Your data may be lost.</p>
+
+<script>
+    window.addEventListener("beforeunload", function (event) {
+        event.preventDefault();          // Required for some browsers
+        event.returnValue = "";          // Shows warning popup
+    });
+</script>
+
+</body>
+</html>

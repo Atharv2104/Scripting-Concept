@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Enter & Leave Event</title>
+</head>
+<body>
+
+<h2>Enter Your Name</h2>
+
+<input type="text" id="name" placeholder="Enter your name">
+
+<p id="msg"></p>
+
+<script>
+    const inputBox = document.getElementById("name");
+    const message = document.getElementById("msg");
+
+    // When cursor enters the input box
+    inputBox.addEventListener("mouseenter", function () {
+        message.innerHTML = "Cursor entered the input field";
+    });
+
+    // When cursor leaves the input box
+    inputBox.addEventListener("mouseleave", function () {
+        message.innerHTML = "Cursor left the input field";
+    });
+</script>
+
+</body>
+</html>

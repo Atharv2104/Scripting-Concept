@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scroll Event</title>
+    <style>
+        body {
+            height: 2000px;   /* Just to enable scrolling */
+            font-family: Arial;
+        }
+        #msg {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: lightyellow;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<div id="msg">Scroll the page!</div>
+
+<script>
+    window.addEventListener("scroll", function () {
+        document.getElementById("msg").innerHTML = "Page is being scrolled!";
+    });
+</script>
+
+</body>
+</html>

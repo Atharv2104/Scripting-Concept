@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="result"></p>
+
+<script>
+try {
+    let a = Number(prompt("Enter numerator:"));
+    let b = Number(prompt("Enter denominator:"));
+
+    if (b === 0) {
+        throw "Denominator cannot be zero";
+    }
+
+    document.getElementById("result").innerHTML =
+        "Result: " + (a / b);
+}
+catch (err) {
+    document.getElementById("result").innerHTML =
+        "Error: " + err;
+}
+finally {
+    console.log("Division attempted");
+}
+</script>
+
+</body>
+</html>

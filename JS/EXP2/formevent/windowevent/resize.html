@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Resize</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #size {
+            font-size: 22px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Resize the Browser Window</h2>
+<p id="size"></p>
+
+<script>
+    function showSize() {
+        var width = window.innerWidth;
+        var height = window.innerHeight;
+
+        document.getElementById("size").innerHTML =
+            "Width: " + width + "px | Height: " + height + "px";
+    }
+
+    // Call function when window is resized
+    window.addEventListener("resize", showSize);
+
+    // Show size on page load
+    showSize();
+</script>
+
+</body>
+</html>

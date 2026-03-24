@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<form onsubmit="return checkpass()">
+<p id = "msg"></p>
+<input type="submit" value ="Check_pass">
+</form>
+
+<script>
+
+    function checkpass(){
+        let p = prompt("enter the password for the validation:");
+
+        if(p.length<8){
+            document.getElementById("msg").innerHTML = "enter password is not strong,so create neww one.";
+        return false;
+        }
+        document.getElementById("msg").innerHTML = "password is valid.";
+        return false;
+    }
+</script>
+<body>
+    
+</body>
+</html>

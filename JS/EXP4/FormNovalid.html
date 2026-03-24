@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Number Validation</h2>
+
+<form onsubmit="return check()">
+    <p id="msg"></p>
+    <input type="submit" value="Check">
+</form>
+
+<script>
+function check() {
+    let n = prompt("Enter the number:");
+
+    if (n == "" || isNaN(n)) {
+        document.getElementById("msg").innerHTML =
+            "Enter a valid number";
+        return false;
+    }
+
+    document.getElementById("msg").innerHTML =
+        "Valid number";
+    return false;
+}
+</script>
+
+</body>
+</html>
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="msg"></p>
+
+<script>
+let n = prompt("Enter the number:");
+
+if (n == "" || isNaN(n)) {
+    document.getElementById("msg").innerHTML =
+        "Enter a valid number";
+} else {
+    document.getElementById("msg").innerHTML =
+        "Valid number";
+}
+</script>
+
+</body>
+</html>
+ -->

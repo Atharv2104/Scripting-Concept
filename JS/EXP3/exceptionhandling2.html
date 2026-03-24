@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+<script>
+            try {
+                let age = Number(prompt("enter the age :"));
+
+                if(age<18){
+                    throw "you are not eligible for voting";
+                }
+                document.getElementById("result").innerHTML = "result:you are eligible.";
+
+            }
+            catch(err){
+                document.getElementById("result").innerHTML = "result:" +err;
+            }
+
+            finally{
+                console.log("program executed");
+            }
+        
+
+</script>
+
+    
+</body>
+</html>

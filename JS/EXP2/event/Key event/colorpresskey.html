@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Key Event Example</title>
+
+    <script>
+    function changeBg() {
+        let colors = ["red", "green", "blue", "yellow", "pink"];
+        let randomColor = colors[Math.floor(Math.random() * colors.length)];
+        document.body.style.backgroundColor = randomColor;
+    }
+</script>
+</head>
+
+<body onkeydown="changeBg()">
+    <h2>Press any key to change background color</h2>
+</body>
+</html>
